@@ -74,6 +74,19 @@ li + li { margin-top: 0.45rem; }
 
 a { color: #b7d0f2; }
 
+.link-list {
+  list-style: "★ ";
+}
+
+.link-comment {
+  margin: 0.25rem 0 0;
+  padding: 0.45rem 0.6rem;
+  border: 1px dotted #ffda8b;
+  background: rgba(255, 218, 139, 0.08);
+  color: var(--highlight);
+  font-size: 0.95rem;
+}
+
 .construction {
   font-weight: 700;
   color: #ffd98d;
