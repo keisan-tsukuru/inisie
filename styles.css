@@ -53,6 +53,8 @@ h2 { margin-top: 0; color: var(--accent); }
 
 .home-banner svg {
   display: block;
+  width: 132px;
+  height: auto;
   image-rendering: pixelated;
 }
 
