@@ -111,3 +111,38 @@ a { color: #b7d0f2; }
   body { line-height: 1.7; }
   .menu a { font-size: 0.9rem; }
 }
+
+.today-bgm {
+  position: relative;
+  overflow: hidden;
+  border-style: double;
+}
+
+.today-bgm::before {
+  content: "♪";
+  position: absolute;
+  right: 1rem;
+  bottom: -0.6rem;
+  color: rgba(255, 218, 139, 0.18);
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.bgm-label {
+  margin: 0 0 0.35rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bgm-track {
+  margin: 0;
+  color: #ffda8b;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.bgm-note {
+  margin-bottom: 0;
+}
