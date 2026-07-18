@@ -130,6 +130,48 @@ a { color: #b7d0f2; }
   font-size: 0.9rem;
 }
 
+.photo-list {
+  width: min(680px, 100%);
+  margin: 0 auto;
+}
+
+.photo-entry {
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px dotted var(--accent);
+  background: rgba(15, 23, 36, 0.45);
+}
+
+.photo-link {
+  display: block;
+}
+
+.photo-entry img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+}
+
+.photo-entry figcaption {
+  padding: 0.85rem 0.25rem 0.15rem;
+}
+
+.photo-entry h2 {
+  margin: 0.15rem 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.photo-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.photo-entry figcaption p:last-child {
+  margin-bottom: 0;
+}
+
 .construction {
   font-weight: 700;
   color: #ffd98d;
