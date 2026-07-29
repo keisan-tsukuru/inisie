@@ -131,6 +131,8 @@ a { color: #b7d0f2; }
 }
 
 .photo-list {
+  display: grid;
+  gap: 1rem;
   width: min(680px, 100%);
   margin: 0 auto;
 }
