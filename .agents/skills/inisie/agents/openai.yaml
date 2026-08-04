@@ -1,0 +1,7 @@
+interface:
+  display_name: "inisie"
+  short_description: "inisieの記録と小さなサイト更新"
+  default_prompt: "inisieに日記やもちものなどの記録を追加し、既存の雰囲気を保って更新してください。"
+
+policy:
+  allow_implicit_invocation: true
