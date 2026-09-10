@@ -43,6 +43,13 @@ h1, h2 { line-height: 1.3; }
 h1 { margin: 0 0 0.2rem; color: var(--highlight); }
 h2 { margin-top: 0; color: var(--accent); }
 
+.site-logo {
+  display: block;
+  width: min(180px, 100%);
+  height: auto;
+  margin: 0.75rem 0 0;
+}
+
 .home-banner {
   display: inline-flex;
   margin-top: 0.75rem;
@@ -51,11 +58,27 @@ h2 { margin-top: 0; color: var(--accent); }
   background: rgba(15, 23, 36, 0.58);
 }
 
-.home-banner svg {
+.home-banner svg,
+.home-banner img {
   display: block;
   width: 132px;
   height: auto;
   image-rendering: pixelated;
+}
+
+.home-banner:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.link-banner {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px dotted var(--border);
+}
+
+.link-banner a {
+  overflow-wrap: anywhere;
 }
 
 .menu {
@@ -200,8 +223,16 @@ a { color: #b7d0f2; }
 }
 
 .site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
   color: var(--muted);
   text-align: center;
+}
+
+.site-footer .home-banner {
+  margin-top: 0;
 }
 
 @media (max-width: 600px) {
