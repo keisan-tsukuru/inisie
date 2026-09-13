@@ -240,3 +240,51 @@ a { color: #b7d0f2; }
   .menu a { font-size: 0.9rem; }
   .item-entry { padding: 0.75rem; }
 }
+
+.diary-month-label {
+  display: inline-block;
+  font-size: 0.65em;
+  font-weight: normal;
+  color: var(--muted);
+}
+
+.diary-month-nav,
+.diary-month-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.diary-month-nav,
+.diary-archive {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dotted var(--border);
+}
+
+.diary-month-nav a,
+.diary-month-list a {
+  display: inline-block;
+  padding: 0.4rem 0;
+}
+
+.diary-archive h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.diary-month-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.diary-month-list li + li {
+  margin-top: 0;
+}
+
+.diary-month-list a[aria-current="page"] {
+  color: var(--highlight);
+  font-weight: bold;
+  text-decoration-style: dotted;
+}
